@@ -4,7 +4,7 @@ Small app to to send text and system/hardware info to a Matrix/Arduino LCD contr
 
 <a href='https://github.com/Tek465B/OHM_To_MatrixO'>Tek465B LCD controller</a>
 
-Sample an analog input at 36.5khz and set the PWM on one output synchronically.
+Sample an analog input at 36.5khz and set the PWM on one output synchronically.(Untested)
 
 <a href='https://github.com/Tek465B/Analog_To_PWM'>Analog_To_PWM</a>
 
