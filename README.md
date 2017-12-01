@@ -1,6 +1,6 @@
 # Tek465B.github.io
 
-Small app to to send text and system/hardware info to a Matrix/Arduino LCD controller,
+Small app to to send text and system/hardware info to a Matrix/Arduino LCD controller(Work under progress)
 
 <a href='https://github.com/Tek465B/OHM_To_MatrixO'>Tek465B LCD controller</a>
 
