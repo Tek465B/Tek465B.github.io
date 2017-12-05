@@ -2,7 +2,7 @@
 
 Small app to to send text and system/hardware info to a Matrix/Arduino LCD controller(Work under progress)
 
-<a href='https://github.com/Tek465B/Tek465B_Sys_MonitorLCD'>Tek465B LCD controller</a>
+<a href='https://github.com/Tek465B/Tek465B_Sys_MonitorLCD'>Tek465B System Monitor</a>
 
 Sample an analog input at 36.5khz and set the PWM on one output synchronically.(Untested)
 
