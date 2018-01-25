@@ -1,0 +1,39 @@
+2018-01-10 16:39
+
+Part Value	tayda #			info
+C1   10µ	A-1799			electro
+*C2  1.8u	A-4532 (2.2µ)		electro, *Could not find 1.8µ at tayda so substitued a 2.2µ.
+C3   10µ	A-1799			electro
+C4   10n	A-1549			film box type
+C5   .22-.47µ	A-4163			film box type
+or
+C6   .22-.5µ	A-4512 or A-4516	electro
+** use C5 or C6 only not both, this is for film box type capacitor or electrolytic selection.
+
+C7   1µ		A-4179			electro
+C8   33pF	A-525			ceramic
+C9   100pF	A-531			ceramic
+D1   1N4148	A-157
+*D2  1N4735	A-171			*Order other value to get bias in "ballpark"
+*F2  2M		A-1652 (1M)		*Could not find a 2M at tayda this 1 is for 1Meg.
+FUZZ 1K		A-1618
+INR  40K	A-1626 (50K)
+R1   12k 
+R2   82k
+R3   13.3k
+R4   1.5k
+R5   47k
+R6   27k
+R7   30k
+trim 100k	A-2506
+Q1   -PNP-TO5	2N591*			PNP Germanium: HFE 108, collector 0.5v
+Q2   -PNP-TO5	2N591*			PNP Germanium: HFE 138, collector 2-4v
+Q3   -PNP-TO5	2N525*			PNP Germanium: HFE 71, collector 8v
+*VOL 5K		A-1912(solder lug), 	*This pot # is solder lug, could not source a PCB mounted 5K log pot
+knob 6mm screw	A-2832 x3
+knob 6mm press	A-322 (for volume pot)
+enclosure 1590B A-5158
+clip 9v batt	A-870
+switch DPDT	A-1868
+jack mono	A-4556
+jack stereo	A-5069
