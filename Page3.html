@@ -36,20 +36,40 @@
                 </p>
                      <p><img src = "/image/20180209_152250.jpg" alt = "Test Image" border = "3"/></p>
                      <p><img src = "/image/20180209_152350.jpg" alt = "Test Image" border = "3"/></p>
-                    <p>Start with the 5K volume and next the 1K fuzz potentiometer
+                    <p>Start with the 5K volume and next the 1K fuzz potentiometer, also install the 2 power wires.
                         <br />Leave a small gap as shown here
                     </p>
                     <p><img src = "/image/20180209_163200.jpg" alt = "Test Image" border = "3"/></p>
-    <p>It should look like this:</p>
+    <p>Now is a good time to clean the flux!
+        <br /> should look like this:</p>
     <p><img src = "/image/20180209_164252.jpg" alt = "Test Image" border = "3"/></p>
-                    <p>More update coming next week once transistor are here!!! :)</p>
-
+    
+    <p>Next i used alligator clip to test for the connect Zener diode
+        <br />You can see here at the red arrow where i attached my Alligator Clip
+    </p>
+     <p><img src = "/image/pcb_alligator_z.jpg" alt = "Test Image" border = "3"/></p>
+    <p>
+        I set the bias trimmer fully clockwise and then set the 9V power on(yes there is no 2M and 40k potentiometer on the board, it do NOT matter for now). measured the Q2 Transistor Collector Voltage(using q2c, see picture below for test point location) i tried different zener until i got to around 3V.
+        <br /><br />Diode that worked for me was the 5.6Volt Zener and removing the 1N4148 Diode(using a wire jumper instead)
+        <br />Now you can process to install/solder the potentiometers and the rest of the components on the board<br />For my own unit this is the transistor and bias setting that worked.</p>
+    <ul>
+                    <li>Q1C = 0.46V, HFe = 80, Leakage = 166µA</li>
+                    <li>Q2C = 4.03V, HFe = 67, Leakage = 89µA</li>
+                    <li>Q3C = 7.59V, HFe = 67, Leakage = 113µA</li>
+                    <li>Bias Supply - Bias supply voltage = 6.09V</li>
+                    <li>Bias OUT - Bias with 5.6Zener and no 1N4148 = 1.59V</li>
+                            </ul>
+        <p>
+    <br />More update next week for the enclosure assembly!
+    </p>
+    <p><img src = "/image/20180214_224158.jpg" alt = "Test Image" border = "3"/></p>
+    <hr />
                     <p>
                     Test Point(used to check voltage with voltameter): 
                         </p>
                         <ul>
                     <li>Q1C = Transistor Q1 Collector Voltage(between 0.42-0.67 Volt)</li>
-                    <li>Q2C = Transistor Q2 Collector Voltage(between 0.42-0.67 Volt)</li>
+                    <li>Q2C = Transistor Q2 Collector Voltage(between 2.65-4.32 Volt)</li>
                     <li>Q3C = Transistor Q3 Collector Voltage(between 7.45-8.4 Volt)</li>
                     <li>Bias Supply - Bias supply voltage(around 7.1 volt)</li>
                     <li>Bias OUT - Bias voltage after the zener(With a 5.6 Zener diode should be around 0.82Volt)</li>
