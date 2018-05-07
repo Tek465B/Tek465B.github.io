@@ -1,0 +1,54 @@
+Qty	Value		Tayda #		Info
+2	10u		A-4141
+2	1u		A-4179
+1	820n		A-4139
+1	33p		A-525		Next to Q2
+1	100p		A-531
+1	10n		A-1549
+1	.47u		A-4516
+
+1	30k				1/4 watt metal film
+1	13.3k
+1	1.5k
+1	12k
+1	27k
+1	47k
+1	1M
+1	82k
+
+1	SPDT t		A-4567 or A-2001(2 position or 3 position to disconnect the Feedback loop)
+1	100k trimmer	A-2506
+1	1N4148		A-157		May not be necessary, see zener notes below.
+1	1N473*		A-170 or A-171	5.6 or 6.2 volt zener (need to swap/test for correct bias for different transistor)
+1	1K lin		A-1841		Possible replacement is(2mm mounting hole may be tight): A-1863
+1	5k log		A-1659
+1	50k lin		A-1858		Possible replacement is Log/audio type: A-1660
+1	1M log		A-1672		I used linear on the first unit: A-1882
+
+1	9v clip		A-656
+1	DPDT stomp	A-1868
+2	1/4 jack	A-4556 and A-5069
+1	1590B enclosure	A-5069
+4	knob		A-2832
+
+Q1	2N591	Beta:108
+Q2	2N591	Beta:138
+Q3	2N525	Beta:71
+
+For the transistor you want the Beta to be like most fuzz face for Q1 and Q2, Q3 anything over 50 will be fine.
+For the bias you have to swap the different zener and also add or jumper the 1N4148 to bias for different transistor.(i like to read Q2C voltage while playing with the 100k trimmer for this part)
+Collector voltage should be like this(or as close as possible):
+Q1C = Transistor Q1 Collector Voltage(between 0.42-0.67 Volt)
+Q2C = Transistor Q2 Collector Voltage(between 2.65-4.32 Volt)
+Q3C = Transistor Q3 Collector Voltage(between 7.45-8.4 Volt)
+
+I tryed a mix of 2SB175 along with 2N525 and rca 34923 and they work really great together.(the rca are marked 34923 i dont know what they are exactly but they are high Beta gain). i replaced the 27k output resistor(next to the 10n) for a 47k, Maby its my Combo amp but with the 27k it was a bit too bright for me.
+I also tryed GS109C most are low Beta(under 100) have to buy a lot to get a few good ones but they are cheap.
+One must be looking for late production PNP germanium with low collector capacitance.
+
+The circuit is positive ground(of course it can be converted to negative ground swapping electro polarity and using NPN transistor).
+When wiring for true bypass one must ground the input while the effect is disengaged.(i will provide a picture for that part of the wiring).
+i started a webpage for the previous pcb here(will update for new PCB): https://tek465b.github.io/Page3.html
+
+NOTE: with the Black pcb you have to install the transistor reversed 180 degree(half turn).
+Am sorry about this silkscreen/footprint error, i changed from eagle to kicad and the library was wrong :/.
