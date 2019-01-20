@@ -48,6 +48,7 @@ One must be looking for late production PNP germanium with low collector capacit
 
 The circuit is positive ground(of course it can be converted to negative ground swapping electro polarity and using NPN transistor).
 When wiring for true bypass one must ground the input while the effect is disengaged.(i will provide a picture for that part of the wiring on request).
+Just send me an email i will be there to help.
 i started a webpage for the previous pcb here: https://tek465b.github.io/Page3.html
 
 NOTE: with the Black pcb you have to install the transistor reversed 180 degree(half turn).
