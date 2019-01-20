@@ -47,8 +47,9 @@ I also tryed GS109C most are low Beta(under 100) have to buy a lot to get a few 
 One must be looking for late production PNP germanium with low collector capacitance.
 
 The circuit is positive ground(of course it can be converted to negative ground swapping electro polarity and using NPN transistor).
-When wiring for true bypass one must ground the input while the effect is disengaged.(i will provide a picture for that part of the wiring).
-i started a webpage for the previous pcb here(will update for new PCB): https://tek465b.github.io/Page3.html
+When wiring for true bypass one must ground the input while the effect is disengaged.(i will provide a picture for that part of the wiring on request).
+i started a webpage for the previous pcb here: https://tek465b.github.io/Page3.html
 
 NOTE: with the Black pcb you have to install the transistor reversed 180 degree(half turn).
 Am sorry about this silkscreen/footprint error, i changed from eagle to kicad and the library was wrong :/.
+
