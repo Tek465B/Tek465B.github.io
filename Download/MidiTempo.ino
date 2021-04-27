@@ -1,6 +1,6 @@
 /*
  * Midi/USB BPM display
- * Use 7 segment LED display common Anode with 2N3906 PNP transistors and 74HV595 shift register.
+ * Use 7 segment LED display common Anode with 2N3906 PNP transistors and 74HC595 shift register.
  * H11L1 opto-cpupler and 74HC14 inverter.
  * 
  * 2021-04-27
