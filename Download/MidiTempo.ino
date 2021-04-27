@@ -107,6 +107,7 @@ ISR(TIMER1_OVF_vect)
     case 4:
       disp(bpm%10);
       digitalWrite(Digit4, LOW);
+      break;
   }
  
   current_digit = (current_digit % 4) + 1;
