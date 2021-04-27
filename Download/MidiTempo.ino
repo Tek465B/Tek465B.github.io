@@ -1,3 +1,13 @@
+/*
+ * Midi/USB BPM display
+ * Use 7 segment LED display common Anode with 2N3906 PNP transistors and 74HV595 shift register.
+ * H11L1 opto-cpupler and 74HC14 inverter.
+ * 
+ * 2021-04-27
+ * tek465b.github.io
+ */
+
+
 #define clockPin 5
 #define dataPin 2
 #define latch 4
@@ -30,7 +40,7 @@ void setup() {
   pinMode(OEPin, OUTPUT);
   pinMode(MRPin, OUTPUT);
   pinMode(13, OUTPUT);
-  pinMode(9, INPUT_PULLUP);
+  pinMode(9, INPUT_PULLUP); //Set unused IO as input pullup
   pinMode(10, INPUT_PULLUP);
   pinMode(A0, INPUT_PULLUP);
   pinMode(A1, INPUT_PULLUP);
@@ -50,7 +60,7 @@ void setup() {
   digit_off();
 
   cli();
-  TCCR1A = 0;
+  TCCR1A = 0;   //Timer interrupt for the display
   TCCR1B = 1;
   TCNT1  = 0;
   TIMSK1 = 1;
@@ -74,14 +84,14 @@ ISR(TIMER1_OVF_vect)
   switch (current_digit)
   {
     case 1:
-    if(bpm<1000)
+    if(bpm<1000)  //if bpm is under 100 turn off the first digit instead of displaying 0.
     {
       disp(10);
       digitalWrite(Digit1, LOW);
     }
     else
     {
-      disp(bpm/1000);
+      disp(bpm/1000); //Else display digit and turn on corresponding transistor.
       digitalWrite(Digit1, LOW);
     }
       break;
@@ -127,9 +137,9 @@ void loop() {
 void CheckMidi(){
   if (Serial.available() > 0 ){
     midi = Serial.read();
-    if (midi == 0xF8) {
-      ccount += 1;//midi clock 248 in decimal
-    if (ccount == 24) {
+    if (midi == 0xF8) { //If serial data is available read it and check for the midi clock byte 0xF8 or 248 in decimal, char alt+0248 = ø on serial using windows 1252 charset.
+      ccount += 1;
+    if (ccount == 24) { //once we get 24 clock per quarter note we get the time in microS and convert to bpm.
       digitalWrite(13, HIGH);
       ccount = 0;
       mymicros = micros() - previousmicros;
@@ -213,7 +223,7 @@ void disp(byte number, bool dec_point)
   }
 }
 
-void digit_off()
+void digit_off()  //Turn all digit off.
 {
    digitalWrite(Digit1, HIGH);
    digitalWrite(Digit2, HIGH);
