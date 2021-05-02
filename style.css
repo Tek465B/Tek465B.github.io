@@ -3,10 +3,6 @@ div.container {
     border: 1px solid gray;
 }
 
-.navm {
-    width: 100%;
-    overflow: visible;
-}
 
 body {
     background-color: rgb(180, 180, 180);
