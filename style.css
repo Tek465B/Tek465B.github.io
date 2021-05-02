@@ -14,8 +14,8 @@ a {
 }
 
 iframe.noScrolling {
-    width: 160px;
-    height: 260px;
+    width: 160;
+    height: 260;
     overflow: hidden;
 }
 
