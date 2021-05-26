@@ -62,10 +62,15 @@ nav {
     text-decoration: none;
 }
 
-li a:hover {
-        background-color: #555;
-        color: white;
-    }*/
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}*/
 
 /*@media (max-width: 600px) {
   nav, article {
