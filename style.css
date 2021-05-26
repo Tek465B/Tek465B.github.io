@@ -31,6 +31,13 @@ footer {
     text-align: center;
 }
 
+nav.sideway {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    min-height: 320px;
+}
+
 nav {
     float: left;
     max-width: 160px;
