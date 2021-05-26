@@ -37,6 +37,7 @@ nav.sideway {
     text-align: center;
     min-height: 320px;
     color: brown;
+    padding: 0;
 }
 
 nav {
