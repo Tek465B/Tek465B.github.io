@@ -63,14 +63,15 @@ li a {
     text-decoration: none;
 }
 
-    li a.active {
-        background-color: rgb(228, 220, 220);
-        color: black;
-    }
 
     li a:hover:not(.active) {
         background-color: rgb(60, 60, 60);
         color: white;
+    }
+    
+    li a.active {
+        background-color: rgb(228, 220, 220);
+        color: black;
     }
 
 /*@media (max-width: 600px) {
