@@ -22,6 +22,7 @@ header {
     clear: left;
     text-align: center;
     padding: 1px;
+    position: fixed;
 }
 
 footer {
