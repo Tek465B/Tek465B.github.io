@@ -67,7 +67,7 @@ nav {
     border-radius: 10px;
 }
 
-topBtn:hover {
+#topBtn:hover {
     background-color: #555;
 }
 
