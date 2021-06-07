@@ -1,6 +1,7 @@
 div.container {
     width: 100%;
     border: 1px solid gray;
+    border-radius: 10px;
 }
 
 
@@ -19,6 +20,7 @@ header {
     clear: left;
     text-align: center;
     padding: 1px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 footer {
@@ -26,6 +28,7 @@ footer {
     background-color: rgb(60, 60, 60);
     clear: left;
     text-align: center;
+    border-radius: 0px 0px 10px 10px;
 }
 
 /*nav.sideway {
@@ -46,9 +49,10 @@ nav {
     float: left;
     max-width: 160px;
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
     /*position: absolute;*/
     position: fixed;
+    text-align: center;
 }
 
 #topBtn {
@@ -75,6 +79,7 @@ nav {
         list-style-type: none;
         padding: 0;
         position: fixed;
+        text-align:left;
     }
 
 li a {
