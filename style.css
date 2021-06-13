@@ -142,8 +142,6 @@ article {
 .modal-ctnt {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
 }
 
 #caption {
@@ -192,7 +190,7 @@ article {
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
     .close:hover,
