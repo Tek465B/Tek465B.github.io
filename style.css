@@ -205,3 +205,16 @@ article {
         cursor: pointer;
     }
 
+.partList {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+    .partList th, .partList td {
+        padding: 6px;
+        border-bottom: 1px solid grey;
+    }
+
+    .partList tr:hover {
+        background-color: rgb(180, 180, 180);
+    }

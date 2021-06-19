@@ -26,15 +26,125 @@
 </nav>
 
 <article>
- <p><b>Midi/USB BPM Display</b></p>
+ <p><h4>Midi/USB BPM Display</h4></p>
             <p>Midi/USB BPM Display using arduino.
-                <br />This page is still under construction.
-                <br />Arduino code: <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FTek465B%2FTek465B.github.io%2Fblob%2Fmaster%2FDownload%2FMidiTempo.ino&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
+                <br />Update 19-June-2021: Added display intensity setting using the modwheel on midi ch16, parts list and proto board layout pictures.
+                <br /><br />Arduino code: <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FTek465B%2FTek465B.github.io%2Fblob%2Fmaster%2FDownload%2FMidiTempo.ino&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
                 </p><p><br />Schematic: <br /><img id="myPic" src = "/image/BPMDispSchematic.jpg" title alt = "Schematic" = "Schematic" width = "75%" height = "75%"/></p>
         <p><br />Picture 1: <br /><img src = "/image/jsco7q6jgqv61.jpg" alt = "Picture front" title ="Front" width = "50%" height = "50%"/></p>
     <p><br />Picture 2: <br /><img src = "/image/lqw7xidjgqv61.jpg" alt = "Picture back" title ="Back" width = "50%" height = "50%"/></p>
-                <p><br />PCB layout and pictures: coming soon
-            </p>
+    <p>Proto board layout<br />Top Component and Wires: <br /><img src = "/image/ComponentWireandJumpers.png" alt = "Proto Top" title ="Proto Top" width = "50%" height = "50%"/><br />
+        Top traces: <br /><img src = "/image/TraceTop.png" alt = "Top trace" title ="Proto Top trace" width = "50%" height = "50%"/><br />
+        Bottom Component and Wires(do not flip the picture 180&deg; and make sure the top of display is facing left): <br /><img src = "/image/ComponentWireBottom.png" alt = "Proto Bottom" title ="Proto Bottom" width = "50%" height = "50%"/><br />
+        Bottom Traces(do not flip the picture 180&deg;): <br /><img src = "/image/TraceBottom.png" alt = "Bottom trace" title ="Proto Bottom trace" width = "50%" height = "50%"/><br />
+    </p>
+    <p><hr /><b>Part List: </b><br /><table class="partList">
+        <tr>
+            <th>Part</th>
+            <th>Value</th>
+            <th>Tayda Number</th>
+        </tr>
+        <tr>
+            <td>R1, R3, R4</td>
+            <td>220 Ohm</td>
+            <td>A-2246</td>
+        </tr>
+        <tr>
+            <td>R2</td>
+            <td>270 Ohm</td>
+            <td>A-2283</td>
+        </tr>
+        <tr>
+            <td>R13, R14, R15, R16</td>
+            <td>4.7k</td>
+            <td>A-2310</td>
+        </tr>
+        <tr>
+            <td>R5, R6, R7, R9, R10, R11, R12, R17</td>
+            <td>100 Ohm</td>
+            <td>A-2245</td>
+        </tr>
+        <tr>
+            <td>D1</td>
+            <td>1N914</td>
+            <td>A-615</td>
+        </tr>
+        <tr>
+            <td>C1, C2</td>
+            <td>0.1uF</td>
+            <td>A-949</td>
+        </tr>
+        <tr>
+            <td>Q1, Q4, Q5, Q6</td>
+            <td>2N3906</td>
+            <td>A-117</td>
+        </tr>
+        <tr>
+            <td>IC1</td>
+            <td>H11L1</td>
+            <td>A-3697</td>
+        </tr>
+        <tr>
+            <td>IC2</td>
+            <td>74HC14</td>
+            <td>A-3697</td>
+        </tr>
+        <tr>
+            <td>IC3</td>
+            <td>Arduino Nano</td>
+            <td>A-2864</td>
+        </tr>
+        <tr>
+            <td>IC5</td>
+            <td>74HC595</td>
+            <td>A-251</td>
+        </tr>
+        <tr>
+            <td>IC6</td>
+            <td>Common Anode 7 Segment Led Display</td>
+            <td>A-4738</td>
+        </tr>
+        <tr>
+            <td>6 Pin DIP Socket</td>
+            <td></td>
+            <td>A-624</td>
+        </tr>
+        <tr>
+            <td>14 Pin DIP Socket</td>
+            <td></td>
+            <td>A-004</td>
+        </tr>
+        <tr>
+            <td>16 Pin DIP Socket</td>
+            <td></td>
+            <td>A-003</td>
+        </tr>
+        <tr>
+            <td>5 Pin Midi connector</td>
+            <td>2x</td>
+            <td>A-1010</td>
+        </tr>
+        <tr>
+            <td>Double Sided Proto Board</td>
+            <td></td>
+            <td>A-1196</td>
+        </tr>
+        <tr>
+            <td>Plastic Box</td>
+            <td></td>
+            <td>A-2383</td>
+        </tr>
+        <tr>
+            <td>Mini Jumper</td>
+            <td></td>
+            <td>A-1324</td>
+        </tr>
+        <tr>
+            <td>Pin Header</td>
+            <td></td>
+            <td>A-197</td>
+        </tr>
+       </table></p>
             
     <p>Bitcoin donation:
         <br /><a href="bitcoin:bc1qaysstpcta3xgdds0626z8rzyygh7kjl98qcqsk?message=donation&time=1567354595">Donate</a></p>
