@@ -106,11 +106,6 @@ li a {
         color: black;
     }
 
-/*@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }*/
 
 article {
     margin-left: 170px;
@@ -118,6 +113,22 @@ article {
     background-color: rgb(228, 220, 220);
     padding: 1em;
     overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        position: static;
+        max-width: none;
+    }
+
+    article {
+        margin-left: 0px;
+    }
 }
 
 #myPic {
