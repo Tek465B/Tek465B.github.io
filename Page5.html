@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
-<link rel = "stylesheet" type = "text/css" href = "/style.css">
+<link rel = "stylesheet" type = "text/css" href = "style.css?v=1">
     <title>Tek465B GitHub Website - Midi USB BPM Display</title>
     <meta name = "author" content = "Tek465B" />
     <meta name = "keywords" content = "Electronic, diy, do it yourself, circuit, pcb, programming, arduino, music, synthesizer, modular" />
@@ -164,22 +164,6 @@
   <div id="caption"></div>
 </div>
     <script>
-        var bttBtn = document.getElementById("topBtn");
-
-        function bttFunct() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
-        window.onscroll = function () { dispBtn() }
-        function dispBtn() {
-            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-                bttBtn.style.display = "block";
-            }
-            else {
-                bttBtn.style.display = "none";
-            }
-        }
 
         var modal = document.getElementById("Modalid");
 
@@ -198,5 +182,6 @@
         modal.style.display = "none";
         }
     </script>
+    <script src="MyJS.js?v=1"></script>
 </body>
 </html>
