@@ -228,6 +228,7 @@ article {
     article {
         margin-left: 0px;
         border-left: none;
+        box-sizing: border-box;
     }
 
     img:not(.modal-ctnt) {
