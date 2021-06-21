@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://tek465b.github.io/sitemap.xml
