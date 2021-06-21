@@ -108,7 +108,7 @@
                     <br />Here is the Schematic
                     <br /><img src = "/Download/WCFSchemZ.jpg" title ="Schematic " alt = "Schematic" width="75%" height="75%"/>
                 </p>
-    <p><hr /><b>Part List(black PCB use 9MM potentiometer, different knobs and an extra SPDT toggle switch with 1 Meg resistor!!!): </b><br /><br /><table class="partList">
+    <p><hr /><b>Part List(Part number in green are for green PCB only, in Red are for Black PCB only and Black are for both PCB.): </b><br /><br /><table class="partList">
         <tr>
             <th>Value</th>
             <th>Quantity</th>
@@ -117,7 +117,7 @@
         <tr>
             <td>10uF</td>
             <td>2</td>
-            <td>A-1799</td>
+            <td>Nichicon: A-1799, Panasonic: A-4141</td>
         </tr>
         <tr>
             <td>10nF</td>
@@ -125,18 +125,23 @@
             <td>A-1549</td>
         </tr>
         <tr>
-            <td>1uF + 820nF</td>
+            <td>1.82uF</td>
             <td>1</td>
-            <td>Tayda do not source 1.8uF, so i use a 1uf and 820n in parallel.</td>
+            <td><span style="color:green">Tayda do not source 1.8uF, so i use a 1uf (A-4179) and 820n (A-4139) in parallel.</span></td>
+        </tr>
+        <tr>
+            <td>820nF</td>
+            <td>1</td>
+            <td>A-4139</td>
         </tr>
         <tr>
             <td>.22-.47uF</td>
             <td>1</td>
-            <td>For green PCB: A-4163 For Black PCB(also work on Green one): A-4512 or A-4516</td>
+            <td><span style="color:green">A-4163</span> A-4512 or A-4516</td>
         </tr>
         <tr>
             <td>1uF</td>
-            <td>1</td>
+            <td>2</td>
             <td>A-4179</td>
         </tr>
         <tr>
@@ -157,22 +162,22 @@
         <tr>
             <td>1N4745</td>
             <td>1</td>
-            <td>A-171 Order other value to get bias in &quot;ballpark&quot;</td>
+            <td>A-101 and A-171. Order other value to get bias in &quot;ballpark&quot;</td>
         </tr>
         <tr>
             <td>1M Gain Pot</td>
             <td>1</td>
-            <td>A-1652</td>
+            <td><span style="color:green">A-1652</span><span style="color:red">A-1672</span></td>
         </tr>
         <tr>
             <td>1k Fuzz Pot</td>
             <td>1</td>
-            <td>A-1618</td>
+            <td><span style="color:green">A-1618</span><span style="color:red">A-1841 possible replacement: A-1863</span></td>
         </tr>
         <tr>
             <td>50k Input Pot</td>
             <td>1</td>
-            <td>A-1626</td>
+            <td><span style="color:green">A-1626</span><span style="color:red">A-1858 possible logarithmic replacement: A-1660</span> </td>
         </tr>
         <tr>
             <td>100k Trim Pot</td>
@@ -182,17 +187,17 @@
         <tr>
             <td>5k Vol Pot</td>
             <td>1</td>
-            <td>A-1912 solder lug type, could not find pcb mounted</td>
+            <td><span style="color:green">A-1912 solder lug type, could not find pcb mounted</span><span style="color:red">A-1659</span></td>
         </tr>
         <tr>
             <td>Knob</td>
-            <td>3</td>
+            <td>3 for Green PCB, 4 for Black PCB</td>
             <td>A-2832</td>
         </tr>
         <tr>
             <td>Knob Volume</td>
             <td>1</td>
-            <td>A-322</td>
+            <td><span style="color:green">A-322</span></td>
         </tr>
         <tr>
             <td>1590B Enclosure</td>
@@ -202,7 +207,7 @@
         <tr>
             <td>9v Battery Clip</td>
             <td>1</td>
-            <td>A-870</td>
+            <td>A-870 or A-656</td>
         </tr>
         <tr>
             <td>DPDT Switch</td>
@@ -220,9 +225,14 @@
             <td>A-5069</td>
         </tr>
         <tr>
+            <td>SPDT Toggle Switch</td>
+            <td>1</td>
+            <td><span style="color:red">A-4567(2 position, recommended) or A-2001(3 position, middle to disconnect feedback loop)</span> </td>
+        </tr>
+        <tr>
             <td>Resistor</td>
             <td>8 One of each</td>
-            <td>12k, 82k, 13.3k, 1.5k, 47k, 27k, 30k</td>
+            <td>12k, 82k, 13.3k, 1.5k, 47k, 27k, 30k<span style="color:red">1Meg</span> </td>
         </tr>
         <tr>
             <td>Transistor</td>
@@ -230,6 +240,9 @@
             <td>Q1 = 2N591 HFe = 108, Q2 = 2N591 HFE 138, Q3 = 2N525 HFE 71</td>
         </tr>
        </table></p>
+    <p>For the transistor you want the Beta to be like most fuzz face for Q1 and Q2, Q3 anything over 50 will be fine.<br />
+        Look for late production PNP germanium with low collector capacitance.
+    </p>
     <p>Bitcoin donation:
         <br /><a href="bitcoin:bc1qaysstpcta3xgdds0626z8rzyygh7kjl98qcqsk?message=donation&time=1567354595">Donate</a></p>
             <p><A HREF="mailto:
