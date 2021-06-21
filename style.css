@@ -115,22 +115,6 @@ article {
     overflow: hidden;
 }
 
-@media (max-width: 600px) {
-    nav, article {
-        width: 100%;
-        height: auto;
-    }
-
-    nav {
-        position: static;
-        max-width: none;
-    }
-
-    article {
-        margin-left: 0px;
-    }
-}
-
 #myPic {
     cursor: pointer;
     transition: 0.5s;
@@ -229,3 +213,29 @@ article {
     .partList tr:hover {
         background-color: rgb(180, 180, 180);
     }
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        position: static;
+        max-width: none;
+    }
+
+    article {
+        margin-left: 0px;
+        border-left: none;
+    }
+
+    img:not(.modal-ctnt) {
+        height: 100%;
+        width: 100%;
+    }
+
+    .partList {
+        width: 100%;
+    }
+}
