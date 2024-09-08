@@ -14,3 +14,9 @@ function dispBtn() {
         bttBtn.style.display = "none";
     }
 }
+
+$(document).ready(function () {
+    $.get("menu.html", function (data) {
+        $("#menu").html(data);
+    });
+}); 
