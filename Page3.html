@@ -26,231 +26,246 @@
 </nav>
 
 <article>
-  <p><h4>Dave Weyer 3 Transistor Hendrix Fuzz</h4></p>
-            <p>This is a 3 transistor Fuzz Face circuit designed by Dave Weyer for Jimi Hendrix.
-            <br />Let you select between two independant fuzz/gain setting for a extremly wide range and fuzz is always on to color the sound.
-                <br />
-                <br />Bare PCB:
-                </p>
-                <p><img src = "/image/pcb_overall_web.jpg" title ="Main PCB " alt ="Main PCB " width="75%"/></p>
-                <p>First clean the PCB using a solvent
-                    <br />Then install the small component first(resistors, diodes) but do not install the Zener and potentiometer yet!
-                    <br />I like to pre-bend the lead and use a nail cutter to trim the lead and i completly bend the lead to the PCB before soldering
-                    <br />Solder and install all the component(except the Zener and potentiometers).
-                </p>
-                     <p><img src = "/image/20180209_152250.jpg" width="40%" height="40%"/></p>
-                     <p><img src = "/image/20180209_152350.jpg" width="40%" height="40%"/></p>
-                    <p>Start with the 5K volume and next the 1K fuzz potentiometer, also install the 2 power wires.
-                        <br />Leave a small gap as shown here
-                    </p>
-                    <p><img src = "/image/20180209_163200.jpg" width="40%" height="40%"/></p>
-    <p>Now is a good time to clean the flux!
-        <br /> should look like this:</p>
-    <p><img src = "/image/20180209_164252.jpg" width="40%" height="40%"/></p>
-    
-    <p>Next i used alligator clip to test for the correct Zener diode
+    <p><h4>Dave Weyer 3 Transistor Hendrix Fuzz</h4></p>
+    <p>
+        This is a 3 transistor Fuzz Face circuit designed by Dave Weyer for Jimi Hendrix.
+        <br />Let you select between two independant fuzz/gain setting for a extremly wide range and fuzz is always on to color the sound.
+        <br />
+        <br />Bare PCB:
+    </p>
+    <p><img src="/image/pcb_overall_web.jpg" title="Main PCB " alt="Main PCB " width="75%" /></p>
+    <p>
+        First clean the PCB using a solvent
+        <br />Then install the small component first(resistors, diodes) but do not install the Zener and potentiometer yet!
+        <br />I like to pre-bend the lead and use a nail cutter to trim the lead and i completly bend the lead to the PCB before soldering
+        <br />Solder and install all the component(except the Zener and potentiometers).
+    </p>
+    <p><img src="/image/20180209_152250.jpg" width="40%" height="40%" /></p>
+    <p><img src="/image/20180209_152350.jpg" width="40%" height="40%" /></p>
+    <p>
+        Start with the 5K volume and next the 1K fuzz potentiometer, also install the 2 power wires.
+        <br />Leave a small gap as shown here
+    </p>
+    <p><img src="/image/20180209_163200.jpg" width="40%" height="40%" /></p>
+    <p>
+        Now is a good time to clean the flux!
+        <br /> should look like this:
+    </p>
+    <p><img src="/image/20180209_164252.jpg" width="40%" height="40%" /></p>
+
+    <p>
+        Next i used alligator clip to test for the correct Zener diode
         <br />You can see here at the red arrow where i attached my Alligator Clip
     </p>
-     <p><img src = "/image/pcb_alligator_z.jpg" width="40%" height="40%"/></p>
+    <p><img src="/image/pcb_alligator_z.jpg" width="40%" height="40%" /></p>
     <p>
         I set the bias trimmer fully clockwise and then set the 9V power on(yes there is no 2M and 40k potentiometer on the board, it do NOT matter for now). measured the Q2 Transistor Collector Voltage(using q2c, see picture below for test point location) i tried different zener until i got to around 3V.
         <br /><br />Diode that worked for me was the 5.6Volt Zener and removing the 1N4148 Diode(using a wire jumper instead)
-        <br />Now you can process to install/solder the potentiometers and the rest of the components on the board<br />For my own unit this is the transistor and bias setting that worked.</p>
-    <ul>
-                    <li>Q1C = 0.46V, HFe = 80, Leakage = 166µA</li>
-                    <li>Q2C = 4.03V, HFe = 67, Leakage = 89µA</li>
-                    <li>Q3C = 7.59V, HFe = 67, Leakage = 113µA</li>
-                    <li>Bias Supply - Bias supply voltage = 6.09V</li>
-                    <li>Bias OUT - Bias with 5.6Zener and no 1N4148 = 1.59V</li>
-                            </ul>
-        <p>
-   
+        <br />Now you can process to install/solder the potentiometers and the rest of the components on the board<br />For my own unit this is the transistor and bias setting that worked.
     </p>
-    <p><img src = "/image/20180214_224158.jpg" width="40%" height="40%"/></p>
-    <hr />
-                    <p>
-                    Test Point(used to check voltage with voltameter): 
-                        </p>
-                        <ul>
-                    <li>Q1C = Transistor Q1 Collector Voltage(between 0.42-0.67 Volt)</li>
-                    <li>Q2C = Transistor Q2 Collector Voltage(between 2.65-4.32 Volt)</li>
-                    <li>Q3C = Transistor Q3 Collector Voltage(between 7.45-8.4 Volt)</li>
-                    <li>Bias Supply - Bias supply voltage(around 7.1 volt)</li>
-                    <li>Bias OUT - Bias voltage after the zener(With a 5.6 Zener diode should be around 0.82Volt)</li>
-                            </ul>
-                    <p>
-                <img src = "/image/PCB1_web.jpg" title = "Probe Point " alt = "Probe Point" width="50%" height="50%"/>
-                    </p>
-                    <p>
-                    PCB layout:
-                    </p>
-                    <p>
-                <img src = "/image/Wiringpicture.png" title = "Wiring " alt ="Wiring" width="40%" height="40%"/>
-                    </p>
-                    <p>
-                    Black PCB layout true bypass:
-                    </p>
-                    <p>
-                <img src = "/image/BlackPCBLayout.jpg" title = "Black Wiring " alt ="Black Wiring" width="40%" height="40%"/>
-                    </p>
-                    <p>
-                    Black PCB layout always on cancel switch:
-                    </p>
-                    <p>
-                <img src = "/image/BlackPCBLayout(nonbypass).jpg" title ="Black wiring NONBYPASS " alt ="Back Wiring NONBYPASS" width="40%" height="40%"/>
-                    </p>
-                    
-                    <p>
+    <ul>
+        <li>Q1C = 0.46V, HFe = 80, Leakage = 166µA</li>
+        <li>Q2C = 4.03V, HFe = 67, Leakage = 89µA</li>
+        <li>Q3C = 7.59V, HFe = 67, Leakage = 113µA</li>
+        <li>Bias Supply - Bias supply voltage = 6.09V</li>
+        <li>Bias OUT - Bias with 5.6Zener and no 1N4148 = 1.59V</li>
+    </ul>
+    <p>
 
-                        Download gerber files here &#40;work with www.seeedstudio.com&#41;&#58;
-                        <br /><a href="/Download/WCF.zip">PCB Gerber</a>
-                        <br />Dont forget to fix the transistor pin silkscreen error. They need to be inverted 180.
-                        <br /><br />Here is the Kicad project and files and some libraries, so you can edit and make your own gerber files&#58;
-                        <br /><a href="/Download/WCFKicad.rar">PCB Gerber</a>
-                        <br /><br />Here is the Schematic
-                        <br /><img src="/Download/WCFSchemZ.jpg" title="Schematic " alt="Schematic" width="75%" height="75%" />
-                    </p>
-    <p><hr /><b>Part List(Part number in green are for green PCB only, in Red are for Black PCB only and Black are for both PCB.): </b><br /><br /><table class="partList">
-        <tr>
-            <th>Value</th>
-            <th>Quantity</th>
-            <th>Tayda Number</th>
-        </tr>
-        <tr>
-            <td>10uF</td>
-            <td>2</td>
-            <td>Nichicon: A-1799, Panasonic: A-4141</td>
-        </tr>
-        <tr>
-            <td>10nF</td>
-            <td>1</td>
-            <td>A-1549</td>
-        </tr>
-        <tr>
-            <td>1.82uF</td>
-            <td>1</td>
-            <td><span style="color:green">Tayda do not source 1.8uF, so i use a 1uf (A-4179) and 820n (A-4139) in parallel.</span></td>
-        </tr>
-        <tr>
-            <td>820nF</td>
-            <td>1</td>
-            <td>A-4139</td>
-        </tr>
-        <tr>
-            <td>.22-.47uF</td>
-            <td>1</td>
-            <td><span style="color:green">A-4163</span> A-4512 or A-4516</td>
-        </tr>
-        <tr>
-            <td>1uF</td>
-            <td>2</td>
-            <td>A-4179</td>
-        </tr>
-        <tr>
-            <td>33pF</td>
-            <td>1</td>
-            <td>A-525</td>
-        </tr>
-        <tr>
-            <td>100pF</td>
-            <td>1</td>
-            <td>A-531</td>
-        </tr>
-        <tr>
-            <td>1N4148</td>
-            <td>1</td>
-            <td>A-157</td>
-        </tr>
-        <tr>
-            <td>1N4745</td>
-            <td>1</td>
-            <td>A-101 and A-171. Order other value to get bias in &quot;ballpark&quot;</td>
-        </tr>
-        <tr>
-            <td>1M Gain Pot</td>
-            <td>1</td>
-            <td><span style="color:green">A-1652</span>, <span style="color:red">A-1672</span></td>
-        </tr>
-        <tr>
-            <td>1k Fuzz Pot</td>
-            <td>1</td>
-            <td><span style="color:green">A-1618</span>, <span style="color:red">A-1841 possible replacement: A-1863</span></td>
-        </tr>
-        <tr>
-            <td>50k Input Pot</td>
-            <td>1</td>
-            <td><span style="color:green">A-1626</span>, <span style="color:red">A-1858 possible logarithmic replacement: A-1660</span> </td>
-        </tr>
-        <tr>
-            <td>100k Trim Pot</td>
-            <td>1</td>
-            <td>A-2506</td>
-        </tr>
-        <tr>
-            <td>5k Vol Pot</td>
-            <td>1</td>
-            <td><span style="color:green">A-1912 solder lug type, could not find pcb mounted</span>, <span style="color:red">A-1659</span></td>
-        </tr>
-        <tr>
-            <td>Knob</td>
-            <td>3 for Green PCB, 4 for Black PCB</td>
-            <td>A-2832</td>
-        </tr>
-        <tr>
-            <td>Knob Volume</td>
-            <td>1</td>
-            <td><span style="color:green">A-322</span></td>
-        </tr>
-        <tr>
-            <td>1590B Enclosure</td>
-            <td>1</td>
-            <td>A-5158</td>
-        </tr>
-        <tr>
-            <td>9v Battery Clip</td>
-            <td>1</td>
-            <td>A-870 or A-656</td>
-        </tr>
-        <tr>
-            <td>DPDT Switch</td>
-            <td>1</td>
-            <td>A-1868</td>
-        </tr>
-        <tr>
-            <td>Mono Jack</td>
-            <td>1</td>
-            <td>A-4556</td>
-        </tr>
-        <tr>
-            <td>Stereo Jack</td>
-            <td>1</td>
-            <td>A-5069</td>
-        </tr>
-        <tr>
-            <td>SPDT Toggle Switch</td>
-            <td>1</td>
-            <td><span style="color:red">A-4567(2 position, recommended) or A-2001(3 position, middle to disconnect feedback loop)</span> </td>
-        </tr>
-        <tr>
-            <td>Resistor</td>
-            <td>8 One of each</td>
-            <td>12k, 82k, 13.3k, 1.5k, 47k, 27k, 30k, <span style="color:red">1Meg</span> </td>
-        </tr>
-        <tr>
-            <td>Transistor</td>
-            <td>3</td>
-            <td>Q1 = 2N591 HFe = 108, Q2 = 2N591 HFE 138, Q3 = 2N525 HFE 71</td>
-        </tr>
-       </table></p>
-    <p>For the transistor you want the Beta to be like most fuzz face for Q1 and Q2, Q3 anything over 50 will be fine.<br />
+    </p>
+    <p><img src="/image/20180214_224158.jpg" width="40%" height="40%" /></p>
+    <hr />
+    <p>
+        Test Point(used to check voltage with voltameter):
+    </p>
+    <ul>
+        <li>Q1C = Transistor Q1 Collector Voltage(between 0.42-0.67 Volt)</li>
+        <li>Q2C = Transistor Q2 Collector Voltage(between 2.65-4.32 Volt)</li>
+        <li>Q3C = Transistor Q3 Collector Voltage(between 7.45-8.4 Volt)</li>
+        <li>Bias Supply - Bias supply voltage(around 7.1 volt)</li>
+        <li>Bias OUT - Bias voltage after the zener(With a 5.6 Zener diode should be around 0.82Volt)</li>
+    </ul>
+    <p>
+        <img src="/image/PCB1_web.jpg" title="Probe Point " alt="Probe Point" width="50%" height="50%" />
+    </p>
+    <p>
+        PCB layout:
+    </p>
+    <p>
+        <img src="/image/Wiringpicture.png" title="Wiring " alt="Wiring" width="40%" height="40%" />
+    </p>
+    <p>
+        Black PCB layout true bypass:
+    </p>
+    <p>
+        <img src="/image/BlackPCBLayout.jpg" title="Black Wiring " alt="Black Wiring" width="40%" height="40%" />
+    </p>
+    <p>
+        Black PCB layout always on cancel switch:
+    </p>
+    <p>
+        <img src="/image/BlackPCBLayout(nonbypass).jpg" title="Black wiring NONBYPASS " alt="Back Wiring NONBYPASS" width="40%" height="40%" />
+    </p>
+
+    <p>
+
+        Download gerber files here &#40;work with www.seeedstudio.com&#41;&#58;
+        <br /><a href="/Download/WCF.zip">PCB Gerber</a>
+        <br />Dont forget to fix the transistor pin silkscreen error. They need to be inverted 180.
+        <br /><br />Here is the Kicad project and files and some libraries, so you can edit and make your own gerber files&#58;
+        <br /><a href="/Download/WCFKicad.rar">PCB Gerber</a>
+        <br /><br />Here is the Schematic
+        <br /><img src="/Download/WCFSchemZ.jpg" title="Schematic " alt="Schematic" width="75%" height="75%" />
+    </p>
+    <p>
+        <hr /><b>Part List(Part number in green are for green PCB only, in Red are for Black PCB only and Black are for both PCB.): </b><br /><br /><table class="partList">
+            <tr>
+                <th>Value</th>
+                <th>Quantity</th>
+                <th>Tayda Number</th>
+            </tr>
+            <tr>
+                <td>10uF</td>
+                <td>2</td>
+                <td>Nichicon: A-1799, Panasonic: A-4141</td>
+            </tr>
+            <tr>
+                <td>10nF</td>
+                <td>1</td>
+                <td>A-1549</td>
+            </tr>
+            <tr>
+                <td>1.82uF</td>
+                <td>1</td>
+                <td><span style="color:green">Tayda do not source 1.8uF, so i use a 1uf (A-4179) and 820n (A-4139) in parallel.</span></td>
+            </tr>
+            <tr>
+                <td>820nF</td>
+                <td>1</td>
+                <td>A-4139</td>
+            </tr>
+            <tr>
+                <td>.22-.47uF</td>
+                <td>1</td>
+                <td><span style="color:green">A-4163</span> A-4512 or A-4516</td>
+            </tr>
+            <tr>
+                <td>1uF</td>
+                <td>2</td>
+                <td>A-4179</td>
+            </tr>
+            <tr>
+                <td>33pF</td>
+                <td>1</td>
+                <td>A-525</td>
+            </tr>
+            <tr>
+                <td>100pF</td>
+                <td>1</td>
+                <td>A-531</td>
+            </tr>
+            <tr>
+                <td>1N4148</td>
+                <td>1</td>
+                <td>A-157</td>
+            </tr>
+            <tr>
+                <td>1N4745</td>
+                <td>1</td>
+                <td>A-101 and A-171. Order other value to get bias in &quot;ballpark&quot;</td>
+            </tr>
+            <tr>
+                <td>1M Gain Pot</td>
+                <td>1</td>
+                <td><span style="color:green">A-1652</span>, <span style="color:red">A-1672</span></td>
+            </tr>
+            <tr>
+                <td>1k Fuzz Pot</td>
+                <td>1</td>
+                <td><span style="color:green">A-1618</span>, <span style="color:red">A-1841 possible replacement: A-1863</span></td>
+            </tr>
+            <tr>
+                <td>50k Input Pot</td>
+                <td>1</td>
+                <td><span style="color:green">A-1626</span>, <span style="color:red">A-1858 possible logarithmic replacement: A-1660</span> </td>
+            </tr>
+            <tr>
+                <td>100k Trim Pot</td>
+                <td>1</td>
+                <td>A-2506</td>
+            </tr>
+            <tr>
+                <td>5k Vol Pot</td>
+                <td>1</td>
+                <td><span style="color:green">A-1912 solder lug type, could not find pcb mounted</span>, <span style="color:red">A-1659</span></td>
+            </tr>
+            <tr>
+                <td>Knob</td>
+                <td>3 for Green PCB, 4 for Black PCB</td>
+                <td>A-2832</td>
+            </tr>
+            <tr>
+                <td>Knob Volume</td>
+                <td>1</td>
+                <td><span style="color:green">A-322</span></td>
+            </tr>
+            <tr>
+                <td>1590B Enclosure</td>
+                <td>1</td>
+                <td>A-5158</td>
+            </tr>
+            <tr>
+                <td>9v Battery Clip</td>
+                <td>1</td>
+                <td>A-870 or A-656</td>
+            </tr>
+            <tr>
+                <td>DPDT Switch</td>
+                <td>1</td>
+                <td>A-1868</td>
+            </tr>
+            <tr>
+                <td>Mono Jack</td>
+                <td>1</td>
+                <td>A-4556</td>
+            </tr>
+            <tr>
+                <td>Stereo Jack</td>
+                <td>1</td>
+                <td>A-5069</td>
+            </tr>
+            <tr>
+                <td>SPDT Toggle Switch</td>
+                <td>1</td>
+                <td><span style="color:red">A-4567(2 position, recommended) or A-2001(3 position, middle to disconnect feedback loop)</span> </td>
+            </tr>
+            <tr>
+                <td>Resistor</td>
+                <td>8 One of each</td>
+                <td>12k, 82k, 13.3k, 1.5k, 47k, 27k, 30k, <span style="color:red">1Meg</span> </td>
+            </tr>
+            <tr>
+                <td>Transistor</td>
+                <td>3</td>
+                <td>Q1 = 2N591 HFe = 108, Q2 = 2N591 HFE 138, Q3 = 2N525 HFE 71</td>
+            </tr>
+        </table>
+    </p>
+    <p>
+        For the transistor you want the Beta to be like most fuzz face for Q1 and Q2, Q3 anything over 50 will be fine.<br />
         Look for late production PNP germanium with low collector capacitance.
     </p>
-    <p>Bitcoin donation:
-        <br /><a href="bitcoin:bc1qaysstpcta3xgdds0626z8rzyygh7kjl98qcqsk?message=donation&time=1567354595">Donate</a></p>
-            <p><A HREF="mailto:
+    <p><hr /><br /></p>
+    <p>
+        Bitcoin donation:
+        <br /><a href="bitcoin:bc1qaysstpcta3xgdds0626z8rzyygh7kjl98qcqsk?message=donation&time=1567354595">Donate</a>
+    </p>
+    <p>
+        <A HREF="mailto:
 &#103;&#097;&#109;&#101;&#103;&#117;&#110;&#115;&#090;&#050;&#056;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
-&#103;&#097;&#109;&#101;&#103;&#117;&#110;&#115;&#090;&#050;&#056;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
-</A></p>
+            &#103;&#097;&#109;&#101;&#103;&#117;&#110;&#115;&#090;&#050;&#056;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
+        </A>
+    </p>
     <p><a href="/Download/pgp.asc">PGPKey</a></p>
 </article>
 
